@@ -1,0 +1,334 @@
+<html lang="by">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Школа №24 — г. Гомель</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header, footer {
+      background: #2d7c53;
+      color: #fff;
+      padding: 10px 20px;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; }
+    .contact-info { display: flex; gap: 15px; font-size: 0.9rem; flex-wrap: wrap; }
+    .contact-info i { margin-right: 5px; }
+    nav {
+      background: #388e5c;
+      width: 100%;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+    nav li { margin: 10px 15px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover, nav a.active { border-bottom: 2px solid #fff; }
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 60px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+    .section h2 { margin-top: 0; color: #2d7c53; }
+    .section-image, .gallery img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+    form button {
+      background: #2d7c53;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover { background: #256b45; }
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+      nav ul, .contact-info, header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Школа №24 — Гомель</div>
+    <div class="contact-info">
+      <div><i class="fas fa-envelope"></i><a href="mailto:school24@example.com" style="color: #fff;">school24@example.com</a></div>
+      <div><i class="fas fa-phone"></i><a href="tel:+375291234567" style="color: #fff;">+375 (29) 123-45-67</a></div>
+    </div>
+    <div class="logo">
+    <img src="Logo.png" style="height: 50px; vertical-align: middle; margin-right: 15px;">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">О школе</a></li>
+      <li><a href="#teachers">Учителя</a></li>
+      <li><a href="#subjects">Предметы</a></li>
+      <li><a href="#extracurricular">Мероприятия</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#news">Новости</a></li>
+      <li><a href="#events">Будущее</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+      <li><a href="#map">Карта</a></li>
+      <li><a href="#feedback">Обратная связь</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="section">
+        <h2>О школе №24 в Гомеле</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0EglZFrGklucsuu8qjPKJNwTywnFNXjWqw&s" alt="Здание школы" class="section-image">
+        <p>Школа №24, расположенная в самом сердце города Гомель, — это современное общеобразовательное учреждение, которое объединяет традиции качества с инновационными подходами к обучению. Мы стремимся не только к академическим успехам, но и к всестороннему развитию личности каждого ученика.</p>
+        
+        <p>Особенность нашей школы — <strong>Спортивный уклон.</strong> Мы создаем благоприятные условия для формирования здорового образа жизни и физического совершенствования школьников. На базе школы работают секции по различным видам спорта: футбол, волейбол, легкая атлетика, гимнастика и шахматы. Многие наши ученики являются призёрами и победителями городских, областных и республиканских соревнований. Регулярно проводятся спортивные сборы, тренировки, а также тематические мероприятия и турниры.</p>
+
+        <img src="https://img.freepik.com/premium-vector/different-ice-creams-illustrations-vector-seamless-pattern-chocolate-waffle-ice-cream-pattern-background_80590-334.jpg" alt="О школе" class="section-image">
+        <p>В учебном процессе активно применяются <strong>инновационные образовательные технологии</strong>: интерактивные уроки, проектная деятельность, исследовательская работа, цифровые ресурсы и персонализированное обучение. Это позволяет максимально раскрыть потенциал каждого ребёнка и подготовить его к жизни в быстро меняющемся мире.</p>
+
+        <p>Особое внимание мы уделяем формированию у школьников таких качеств, как ответственность, инициативность, уважение к окружающим и стремление к самосовершенствованию. В школе действует система поддержки учеников: психологическая служба, социальный педагог и наставнические программы, направленные на адаптацию, мотивацию и развитие позитивного школьного климата.</p>
+
+        <p>Школа №24 — это не просто место обучения. Это активное, сплочённое сообщество, где каждый ребёнок чувствует себя важным и ценным, где закладываются прочные основы для успешного будущего в учёбе, спорте и жизни.</p>
+    </section>
+</main>
+
+
+        <section id="teachers" class="section">
+            <h2>Наши учителя</h2>
+            <img src="https://img.freepik.com/premium-vector/hand-drawing-styles-teacher-items-teacher-doodle_137262-178.jpg?w=360" alt="Учителя школы" class="section-image">
+            <p>Наши учителя - это не просто педагоги, это наставники, которые умеют вдохновить, поддержать и помочь раскрыть потенциал каждого ученика. Их задача не только передать знания, но и воспитать в детях любовь к обучению и стремление к новым вершинам. Мы гордимся тем, что многие из наших преподавателей имеют награды на уровне города и страны, а также активно участвуют в образовательных конференциях и семинарах.</p>
+            <ul class="teacher-list">
+                <li>Иванов Иван Иванович - Математика и Информатика. 20 лет опыта.</li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAB0VBMVEX////x8vLt7e1lWsz/zKZ3QwT7sECQY0qrsrxVT8H/3gBePzH09fWTZElBQEJWUk+ampqlrbi8tbJVMSCzucOKWT3Vx8GUlZT/tUH/0Kra29yIVTeIXUvm5+izpZ6utbyEhIRyOgBZOzHrpUGQYzVRKxZcUMpQScFuMgDWhyhIQb63ubvU1db/sDTh395bT8r/yJ/usX7Gx8n/4gBqMwAAAAD/1LXnpWvtr3vhm1rsoDfhlDBwb8DusFvVjD9PTlD/4S3/8ar//O95eXhpaWj/6HFpKADAj2hfNw72vZDellHlxq7w39Pr1MPBs6zMfiepaTbfiw+gkIrMyuScob3ZqYPcjSyNkL63teJoTUB6amViXsAwLzH/87r/99Huvw/cnRf2zwn/7JLEbSH/6Xf/7prnsxLXlBnjpADFwpbhz2W0nYzTyX+Wc1X/9cS8qJininSpeU+ZaDxAEgBqQx+Jc2Kce2Cod07lt5YmISJNQDj/7d/UmmiGTiru1L60bS1zTjtaVJmSjNqueDSZgXnTrYzOiFXQeQC/hlfYljtJLzB7d7mysOKvg5d/e85fW8CBgr++jInXnHpgSG1jUaCSbHyRcam1h5Kem9mKg9fg3vP4y+dFAAAS/klEQVR4nO2di3vTRrqHLcUYJ0wSOzixLSriULCxJV+iQIMdCAGHuHYC1ASnaQmk3XbLnsNhQynQsEmhG27dwpLuOXsB/tozMxrJo4stGUijaf17+lDZkSLNyzffZS7C5+uqq6666qqrrrrqqquuHHX1XF9f38yZd/kVAMrw8R0faZd1rY9o5uxbXQ9EQRByYg7+KYiIBfoMxb/fx/w1daavqbeAwsHGc4DDAhwPscg8wMeizKqx0Ej6Zjq9Ggg5ziQR6IcytwMPvPM622dQhz6FF8xEDALyzjz0DuuckclMRxeLOdCWCcfnduapd1Y6jYmJCfS/Tq4VRQckHBB26rl3UhqRvtUvVr9s72XNP+IFKxJgOmKYycTq9fRqemminZ38+Q+mL2QbJLJIcAAJHXGiwGDsUZF8+dXqV9fTX7TrO1fPzZwxWAoMwSYgUGX0pwz7FJBDxFLEHW/De9RZ1MSvMRNoJF/2TVzv6zPbQlNnLExMZgKiicFcgk+I0VkpARK+svpzmNHtdEPeo8780Udi8cQ3f4IeFjG51vp0U98RzWbC+UISRKEMQFNJ+HQmqP/sbDven85+PTNz7izJ2Sa++AYy+aLvyzZMTD7WaCZABCA0K4kQRlTiQSJBMeFEZiLytXPnMIE/YijXVydW09f/NOL6cmO2xq8oQFYUrswpPqXMAzHBR3UmIMdM6XOVJK3XZjCU69+sTvxX2O3FnGgwk0QZgoCSYDBCXtaXkKmwxGI+e+0PfavQUP47GA43owQ/cmHtxo1bN26sjYxY/555mglQpKiI4wzAIEBZCgG6b4lMBR+ia6sz/zMaDgbD6t8ov3bzKNSYqqNH5+b6bxi7FW+0E1+CoxnwijEoMWUof9YcZyQMiUAmKEbkbs6Nje0xCZK5R2ExMoGdB/8JgD5qYJTIUIX89VVyAIJYqO+szVmAaFjG1rQLOTMTGJpBKLFik9xiw2Gm81yjBtc4bCcRn+/CnD0RgoVQAYKVCcxQlFZVITM5CrST5oAJUCLBIDTxFkaiU9mj9iBTfhIVEZLBUAs7YYnJVUuSxrczE6y5e+g8k51AJiAaEq3ZLXtMrOKPOjHZMzaWsyQoiInSykjYZsLdckYCdZQzDRWAkKglJ781Ji1DjtlS7pmzthD1yQYNm4OQSDddGQnSHDxbNjAhQ7MwQxHLvIUKS/mJQYfdGQnuPDkUjqmKJiTABF5EE1+yoAxK5rEVlvJYWv3ukew5iiogatgeKIlENBoNIQ1JgyETE3ZSNqPWXHccxARfQg3cg6a4WXP8YdVMOMe8hNLYLfWinP0EjxkJq1PHtzroOXvmtEaKWurWJg4DJkcKkGx7zpgm09c39MvwID1MP6BaImE1Do+YmYwd23P420qlAVWpfHt7zzEKzA/0lSKkIvMA8LI9E7YmM2itGU1hbE+lEDfI36gcPqaedNTkHkQ80wXzMmB1JuwuuPD57hmYjN2GEEzCXG5DLHOWviCQ6IKX5QhaRgs4kemFOb5+ExIzEY2LvzJmHdsnroTUNJyKRlu1xK4OG7oObRxxMxbTlYCHFADypSzbhJ1uUn3n2HpcwwE97Lpfw6L6lYLxQlGA8TiX46B17M6T75yo9GTsW4xkvXLnuyMff/zxd9/dqWAo6zfv3LnZ8Ps3mlfxeMgACD5EZfcefodExZ0xbBOVO5UGsZWbNzGkyseVSuXAkUqTiSzKaAySzZU3zmrmJ2OqVTQ9iXZAYvL3d/WLBJADOZHLMZuBOOgozNKwrRyzhBrTFw/0a0QZhmWendngTnVvrLLeuA2pmOLwX+7GTXw+2u1H/dU0UkU94/uxsQbNJH7v+PF17cP6/Xvx3xWTDX+1VvP7jxm7TvzW8eNPsIeF/909fvz3ZSdxfy1eHY8f22PyH/f/gpFMqkzWf1dMCtUTqPGFdSMS4kPik1XUdz77ffUdf6HYosjBgiak8Xng/Mt+I/ooXhxvw6QwqROr7vaj/mo6W0A+o6Xitbh+tOH8234j2ii0QeKPF3WLKRZ+G1D48w/m5x8stB/P2HjwwJ4HVEGzk3j1hN88XMCeNtZrz+r1ElS9nm4stD3XzlbiJybHJ2vkJ3F/sWoeLmBOYLMeiAU0xQL16fNtzi74jcFHDcTVapWUgYUi8sSFt9s46BWBZxQRFUt90/ZEUVYUyR8fN5jKpAFRfLJYQPGYcTuZDlgUK5mhAFmSFEnmOXnemKbEi1XDp3H1E7NMABr4Ol/XSEB3ohtMfZ4+UZQUgQNAEAAnrqGMlbaN2gl9JCU+SZAwm7XJ4XDE52tkMYSpdHqqNJXWLeVZ87ycJKtTMjkFcECCTZ82dJfxWnHyxHi16m9aELNmghZFc74iso1YuoScSmyqpLsULfrwkqzP9EpoFHEeNrlmGC2I+wvV8RPQXIrE0xQYNROeD0PJ3NMPkS6SXpP+kGjpPI8lKc1pO4AW0mBDGbdUPrj3aKjYrAGH9h85MIx0YO8HSIRJ7OEHmoYPHDjww12JXmQFFDSBxw/ZQoFS62Z/gU0kI9/t+2AvrSXC5CL1df/ekGn3mqjgmSsMpWZBEh8fZ3nk8fN9+wxI+qcCFibDdyXL0hlJXRohzcMsbboaNzOpshxzIJN+msntkoXJ8CWb9b05dbU8UC5AKkU1PWt6lHG17zBa6zzeb2TyiZVJyG4LOdkTDO1HloYurP1UG/drKy0K47X1BywH4oP7jX3noRaCH2pMQtYVrFo4JnRGYQKXm28Ui5NQxdo47DKgQDoPkKTdbmLHGtKYEGt5qCWwD8m3ki0QtJmRQJFkCTlgtAB4ZGFhgUwFf6QaiiLxCnPLsXJHcNzpv3sJM9BCcSDwCUbygXlFLwVFQIkbDxvN45MgJJ5s8fNxQm59fX7+goR2mTNnKODIvh9R44ORUD8VigMlzKQNEgyFVySUvwkKhKE09ygBWYGFsyyqiETmoOzXmFzqp0JxoHQbMWmHhENGgnqNBICiKBLlicVQrrndD8Ym1iaJP8NM9u6920+HncASdq/tiODmorIHrSqRRUOWOyAY1sCyZiiPDYHnEy3swFA8HDJtxFLfzmHGomiv7KC+G5QUwzZqxhadGIOxFoph2Bm+ZMlLRMu2RkGA7sQcrIEwODg7SBsOY4YyRDPRww50sXet2Suw+hdJhK7EfCb/197lKLXfAvav3W5mRyLBmGiJmMnUbTv/CjuB2SRgAiIJZvMBW9svwADV8xgzFO4IcbKGaic9fMl2V6cFFD8KRMXCbvHTTzkpShsKWx6FZqKHna9seg42C/Nr51CBbD1T/KVnmWVD+ZyqAjUXW/pktEVmYt2pZgcP9CRf+gweha0chT90CGdt/f1NF1t/3OJ1akCxvFRMIju2DKdtJfO8fJr6kld2u50d6emjw7d/uvf48eNbj5a07KSVmVhDD5BkJEEQRU6HAxaTyWUQNZy2283sRBv1WCyWXQsGgxeyJLPP3rJJzkjbLEGGV/cQoJlBKEXA78AR8z1bBtthq/OsYwoN9KoKbdJrqk2dAyTru9aa2x45UYZoZN53JZ8x9qccSylKGvuQU4jJRdJ1Ki3NBNmFQ2EIUQjSk1rtaWPBcCJDDmVBNY4PsZ2oLjbbttX2kcbEZRSNQRY36e8YcigN4kIgkoNqdhIrtm+0NhTbTuIaGqKuFqlozBCTNLGNoWCwQvDccGpxy6hEEcDj9tUGNXW42y11qY3zT0nmigLPNMlOIg5NBmJ7l4JOUfDa2XhNd8iMMFlP1/XlFdknWtiJbTr7C7nlu5D0M9T1xNV57UQmkraFZ1lqVVLsRPBGiSQnDkSwGThwAwqZ/9rUZjwUBjbucM+M67ROhX8ief2Qo7dAPcHmxcH0z4egMynE/XHCBPAsdJ2amp01DSWsetvYtAzcSB2GbiXxwuTk/NNqvNBQPwssICFpSVo3lizpOqXvQ0OOGhk5eOHSQRtd0jQCdfDRTw8vXVK/HmklD82IzasLtdJNO1FX+MV+PLTfUXi9Sv9wC/Uj4SM8bdb23OHhH9acH/ZX0iY2kFKz7xA8f/t5n6OaY1DvQwd2G4UutdPoq9a0w9hFN0z6nVvqXsO7jUJX3dR1yGFp6tHPh44QtYSyt/+dhRaEqXL/uuIdFsBMYk0mpSXyRSzwRM6pOj3YQi1/4F5DPNFuk2iKN9uJejRVjAVikxESUKO2CpXJO7MS5XJZPXKtKLwkgQ88OJqiMqFcrMrk6Vo2kD15UtbfKWeVT4IJ6eJ26srW5dFIsMMpCi4YQa9Y9aZUJk0Xm0ZHsfroUDZWzCeft87cgZTzLV7J9Pb2Zp6PBkcvv+jodQwArU7eqTa9qzjMZMloJqVbwXA2+/dkTzK/7Gsxbi/Jy72ICNSV0WDwcibz8k0H90VMvPryF9XHau6E+Nqn8IE/zJ7sgcpfWfSZXxkGOw4fOZkhRKAgk9FUbyrz0r2jjMBbeMitGvWMDjuqX0mjd0yfym739KhUlkWDI+EXX7zMJ9GPCJIMPH90Gx6kMstub6uQV3t7Unj8SKt2LmJAJcSkkb3SQ5TM92y9WF6EWn7x6nVPXgXSo1NJXYZMTqYwntcubyvDzuPBkKOqQfkTjGRpCg0/Btey/+6hlEzmoZLJZI9JiMmn0Mn+klJt5qW724rhoHcDD9rAREIxQYKH2oIXsv+wtN9WkMkvkMmnKdKR3HUf/MbzHW7a2wv2G5UJDsjpKW3eKxtwhQRCSZ1EgSeleRd3t/VyMPbN1wMlnJQgp5IuxaBORaACsf/Nu4SyDZkEdSbuDGUUb5/yqp5mMZPAVHopfVit7T6D2rfvzl9dWkoKBR4tMKfceZSI+u8neFW1upbG3j5kKHvv/J9LJs3A47rzyPq/PeJNNbSVWj8eMo8G/NMNkyQKPM91Jq7yWQE6FC/PamyQ2Z3Yo58PYSEa6tH+n/9pjb8WJnTg6c0surkn7+VgjKRNZ8QeHcb6HOqwrn/9exvnJq2hvERVYGdO1tNVINK6vmEWKytFIsFTMV3ZbKC4+Y+/n+zJt+CCqsCwxiT1ytU9vVwFYhl346NENnzK8BUCk81O/ueKPRa1CuyIiaerQKzpUqwtE0ImWx950WNNW/LwL330isZky9UdPV0Fqpp/1ny9hz2TWKD+rIFOXba4luTl0WYwdskEVoGeDsZY5xvoNTD1EuwjmAlxJohRtlSvP5tu6FtiX5ugJKkq0C0T0ePBWBdYOD+/3thEufrmNFKtuLnZeDL/YMHY9bdMUJ5TwdilP/F2FWhVxDEmXDEyoavA1At3N/F6MDYp4ligLRodbS8VeNzlbD5f0NNVoEXOTHwGJtspbfjRdW7v+SrQLBdMDGbyOkNVgS4HUDxfBZrkgslLOuy8ytCBx+VNvF4FmtQpk+VMswp0GYo9PiRrVYdM8ouZk3oV6Dbs4CqQoWDsggkdjPNvMs0q0G3YYaAKNMgFEzppy4NMalQbfsy4jq/erwJpdRqLfZmUXgWmXN+FgSqQkjOTNzST11wmdZkMP7ocokZiogrU1Vkem3z1JqPPBbp2sQxVgVjOTF5Q/iS5DJk8J4HHvYtlrAp0ZvLaEHYWM71a4HHvYhmrAp2Z0B4241vO9OpVYAe3CbIUjB2ZcMaw8yrVS6pA11msdhtmqkBHJgYXu+XbgkzU4Uf3q3J8jAVjRyavDC7WBytiEnjcDhRgMVUFOjKhM3uIIZXSFqG4HSjAYqoKdGICaHey7fMtb2cyePgx424sVvs1LAVjJyZ0FpvESdqb5eVg5w1kqQp0YvIi0/QnOCEBIs8HO882WKoCHf3Jm1cv8aK/fD6Dgy8QRd5F4WiWwlAwdtE8nhfeLL55QywfMhHfooEsVYEumIhY+kceMwkmZKmTNrJUBbpmokGZDcm8DJko5UFlQJHcJmKeX5hDyU3fQURy9++HRPgXHVpZWbl/Gl11Xx6QyisrAyF3rpOhKtCZiZyQeU6cHTgtHJeiidAAErwqsjK4El2Bxyv3y242xzJUBTozgYYxcBo2vjw7q6zIiMLACuoIpwd03U+4uxEjgceWifbeKJ7nudCK3vTB0+UyPlgJQSazTSYDK4N4o5++U8zmRgxVgToTjIG3CNBN15VAgWeFhhK1uRYD0m7EUBWITdranCaTQTsmZXhZSN1PSjRrw4SGw0oViCxj1ImJrZ3MIpQJWuU2vwNL9H4VCNS/V87JTrgQZQyaBlAwDuIQLeZy+N98zzkxQQkKvBPn1dgDmk+qhMORdi3hlHLCRiiyOlIw/iJ0iUrOi1gMjyoKDo1B1qDagiDImpB5OV1oYoIukckHz1HpqCktGqhQDXQpVCQp2ofdZmBWuwjhVjLdQJeXwMo4ot17txlYBNo+uyuhbCPSIVwlGCHe3JPr/d6ZCoqso50aHMkJPedMdIF360LBcLjDwKNi8S4QTbbpvDvJcru0xhaH93k0ZV/pvC9xbMEwq0Ud+LYkmGZhK+o93M4A9NfJ7PZTd9VVV1111VVXXXXlWf0/wGNCcw99LEcAAAAASUVORK5CYII=" alt="Учителя школы" class="section-image">
+                <li>Петрова Анна Сергеевна - Русский язык и Литература. Публикуется в научных журналах.</li>
+                <img src="https://vk.com/sticker/1-78949-256b" alt="Учителя школы" class="section-image">
+                <li>Мицкевич Янина Андреевна - Беларуский язык и Литература. Показывает лучшие результаты на алимпиадах.</li>
+                <img src="https://shuritskoe.gomel.by/wp-content/uploads/2023/08/%D0%B1%D0%B5%D0%BB.%D0%BC%D0%BE%D0%B2%D0%B0.png" alt="Учителя школы" class="section-image">
+                <li>Сидоров Алексей Викторович - Физика и Астрономия. Автор нескольких учебников.</li>
+                <img src="https://cdn-icons-png.flaticon.com/256/7189/7189960.png" alt="Учителя школы" class="section-image">
+                <li>Кузнецова Мария Петровна - Химия и Биология. Организатор школьных научных конференций.</li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU6zL7sR1qmUxWUjamNKfGxWtnlNDlocF_ow&s" alt="Учителя школы" class="section-image">
+                <li>Смирнов Дмитрий Александрович - История, История Беларуси и Обществознание. Победитель городских конкурсов педагогического мастерства.</li>
+                <img src="https://istorik-gatchina.ru/img/kategorii/istoria.png" alt="Учителя школы" class="section-image">
+                <li>Вишневецкая Людмила Павловна - Физическая культура. Первый человек школы.</li>
+                <img src="https://img.freepik.com/premium-vector/gym-teacher-exercise-equipment-perfect-design-assets_606402-102.jpg" alt="Учителя школы" class="section-image">
+            </ul>
+        </section>
+
+        <section id="subjects" class="section">
+            <h2>Предметы и образовательные программы</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0KqMg9EvlLnJ_hxSPkAbpwO0cWeAR8J6Szw&s" alt="Предметы школы" class="section-image">
+            <p>Мы предлагаем широкий спектр учебных дисциплин, которые направлены на всестороннее развитие наших учеников. Наряду с традиционными предметами, такими как математика, физика и литература, у нас также есть специализированные курсы, которые развивают дополнительные навыки и интересы. Мы стараемся создать гармоничную образовательную среду, в которой каждый ученик сможет найти свое призвание и стать специалистом в своей области.</p>
+            <ul class="subject-list">
+                <li>Математика: Алгебра, Геометрия, Математический анализ</li>
+                <li>Русский язык: Литературное чтение, Стилистика, Риторика</li>
+                <li>Физика: Классическая механика, Электродинамика, Астрономия</li>
+                <li>Химия: Органическая и неорганическая химия, Экологическая химия</li>
+                <li>История: Всемирная история, История Беларуси</li>
+                <li>Иностранные языки: Английский, Немецкий, Французский</li>
+                <li>Информатика: Программирование, Разработка сайтов, Кибербезопасность</li>
+                <li>Физическая культура: Спортивные игры, Легкая атлетика, Плавание</li>
+            </ul>
+        </section>
+
+        <section id="extracurricular" class="section">
+            <h2>Внеклассные мероприятия</h2>
+            <p>В школе 24 особое внимание уделяется внеурочной деятельности. Мы понимаем, что школа — это не только занятия по учебным предметам, но и место, где дети могут развивать свои таланты, создавать проекты, участвовать в конкурсах и спортивных мероприятиях.</p>
+            <p>В течение года организуются различные мероприятия, такие как фестивали, выставки, конкурсы, спортивные турниры и культурные события. Каждый год мы проводим большой фестиваль искусств, на котором учащиеся могут продемонстрировать свои достижения в области музыки, танцев, театра и живописи. Также у нас есть спортивные секции и кружки по интересам: робототехника, журналистика, театральное искусство.</p>
+        </section>
+
+        <section id="reviews" class="section">
+    <h2>Отзывы родителей</h2>
+    <p>"Школа 24 — это не просто образовательное учреждение, это целый мир для нашего ребенка. Она не только учит, но и развивает в нем навыки, которые пригодятся в жизни." - Екатерина Владимировна, мама ученика 8 класса.</p>
+    <p>"Мой сын, наконец-то, нашел себя в этой школе. Здесь ему дают все необходимое для того, чтобы раскрыться как личность и профессионал." - Дмитрий Александрович, отец ученика 10 класса.</p>
+    <p>"С первого дня обучения мы почувствовали заботу и внимание со стороны педагогов. Школа 24 — это место, где детей действительно любят и уважают." - Ольга Николаевна, мама ученицы 5 класса.</p>
+    <p>"Учебный процесс здесь продуман до мелочей. У сына наконец-то появился интерес к учебе, которого раньше не было." - Андрей Петрович, отец ученика 7 класса.</p>
+    <p>"Потрясающая атмосфера и замечательный педагогический коллектив. Дочь с удовольствием идет в школу каждое утро." - Светлана Сергеевна, мама ученицы 4 класса.</p>
+    <p>"Очень благодарен за индивидуальный подход к каждому ребенку. Мой сын получил поддержку, в которой он так нуждался." - Валентин Юрьевич, отец ученика 6 класса.</p>
+    <p>"Школа 24 дает не только знания, но и воспитывает уверенность в себе. Мы видим, как растет и развивается наш ребенок." - Марина Алексеевна, мама ученицы 9 класса.</p>
+    <p>"Здесь учат не просто предметам, а жизни. Учителя вкладывают душу в каждого ученика." - Николай Михайлович, отец ученика 11 класса.</p>
+    <p>"Отличная внеурочная деятельность — кружки, мероприятия, экскурсии. Все это делает обучение насыщенным и интересным." - Елена Ивановна, мама ученицы 3 класса.</p>
+    <p>"Мой ребенок стал более организованным, ответственным и мотивированным. Спасибо школе за такой результат!" - Татьяна Львовна, мама ученика 6 класса.</p>
+    <p>"Очень приятно видеть, что в школе ценят мнение учеников и родителей. Мы чувствуем себя частью большого и дружного коллектива." - Алексей Степанович, отец ученицы 8 класса.</p>
+</section>
+
+
+        <section id="news" class="section">
+            <h2>Новости школы</h2>
+            <article class="news-item">
+                <h3>Новый спортивный зал открыт!</h3>
+                <img src="https://sfsi.ru/upload/resize_cache/iblock/68c/750_1000_1/68c935de1e553225ca19843d9f0178ac.jpg" alt="Новости школы" class="section-image">
+                <p>Мы с радостью сообщаем, что завершено строительство нового спортивного зала, который теперь будет служить местом для занятий физической культурой и проведения различных спортивных мероприятий. Это важное событие для всех учеников школы.</p>
+            </article>
+            <article class="news-item">
+                <h3>Школьный фестиваль искусств 2025</h3>
+                <img src="https://mininuniver.ru/images/news/2017-02-10-%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D1%8C-%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0-%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2/GJYswOlNza8.jpg" alt="Новости школы" class="section-image">
+                <img src="https://mininuniver.ru/images/news/2017-02-10-%D0%A4%D0%B5%D1%81%D1%82%D0%B8%D0%B2%D0%B0%D0%BB%D1%8C-%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0-%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2/DTqmQIPmS4M.jpg" alt="Новости школы" class="section-image">
+                <img src="https://sun9-67.userapi.com/impg/PBHamVWG7qivMDCgXxXOjKmw6-cA9yMlmIz5xg/r7xcvvsjsL0.jpg?size=604x339&quality=95&sign=43aa7cac43c5b32908b055b3ce3992c9&type=album" alt="Новости школы" class="section-image">
+                <p>Приглашаем всех наших учеников, их родителей и гостей города на ежегодный фестиваль искусств, который пройдет в конце месяца. Это событие, которое уже стало традицией, всегда вызывает большой интерес, и каждый раз приносит много ярких и запоминающихся моментов.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы или вы хотите узнать больше о нашей школе, не стесняйтесь обращаться к нам:</p>
+            <p>Email: <a href="mailto:school24@example.com">school24@example.com</a></p>
+            <p>Телефон: <a href="tel:+375291234567">+375 (29) 123-45-67</a></p>
+            <p>Адрес: г. Гомель, ул. Крестьянская, 23.</p>
+        </section>
+
+        <section id="map" class="section">
+            <h2>Местоположение</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10156.53829819139!2d31.002274344643547!3d52.44126807069524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d6c7a7ec1b82d9%3A0x850d4f1a9b6e3722!2z0KLQutCw0YDQvtCy0LDQudC-0Lkg0LLQvtC90YHQu9Cw!5e0!3m2!1sen!2sby!4v1600868937415!5m2!1sen!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section id="feedback" class="section">
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <!-- Новая секция для будущих мероприятий -->
+        <section id="events" class="section">
+    <h2>Будущие мероприятия</h2>
+    <ul>
+        <li>Международный конкурс по робототехнике — 15 июня 2025 года</li>
+        <li>Школьный чемпионат по шахматам — 10 июля 2025 года</li>
+        <li>Осенний турнир по футболу среди школ Гомеля — 25 сентября 2025 года</li>
+        <li>Научная ярмарка юных талантов — 5 октября 2025 года</li>
+        <li>Фестиваль школьных театров — 20 октября 2025 года</li>
+        <li>Зимняя олимпиада по математике — 12 декабря 2025 года</li>
+        <li>Новогодний бал старшеклассников — 28 декабря 2025 года</li>
+        <li>Весенний фестиваль искусств — 15 марта 2026 года</li>
+    </ul>
+</section>
+
+        <!-- Галерея -->
+        <section id="gallery" class="section">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img src="http://www.school24.by/images/stories/10.05.20252.jpg" alt="Фотография школы 1">
+                <img src="http://www.school24.by/images/stories/img%2001010105.jpg" alt="Фотография школы 2">
+                <img src="http://www.school24.by/images/stories/05.05.2025.png" alt="Фотография школы 3">
+                <img src="http://www.school24.by/images/stories/sport2025.jpg" alt="Фотография школы 4">
+                <img src="http://www.school24.by/images/stories/06.05.2025rod.jpg" alt="Фотография школы 5">
+                <img src="http://www.school24.by/images/stories/19.04.2025.jpg" alt="Фотография школы 6">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Школа 24, Гомель. Все права защищены.</p>
+    </footer>
+
+    <!-- JavaScript для плавной прокрутки и обновления новостей -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+
+                document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+  </main>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = this.getAttribute('href');
+        const section = document.querySelector(id);
+        window.scrollTo({
+          top: section.offsetTop - 60,
+          behavior: 'smooth'
+        });
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
